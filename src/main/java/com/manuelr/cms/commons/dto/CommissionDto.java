@@ -1,6 +1,7 @@
 package com.manuelr.cms.commons.dto;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.manuelr.cms.commons.enums.ApprovalStatus;
 import com.manuelr.cms.commons.utils.Place;
 import com.manuelr.cms.commons.enums.CommissionType;
 import lombok.*;
@@ -43,7 +44,7 @@ public class CommissionDto extends RepresentationModel<CommissionDto> {
     private BigDecimal assignedAmount;
 
     @Null
-    private Boolean managerApproval;
+    private ApprovalStatus managerApprovalStatus;
 
     @Null
     private Long version;
